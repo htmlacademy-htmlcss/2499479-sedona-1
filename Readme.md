@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Петров](https://up.htmlacademy.ru/htmlcss-individual/1/user/2499479).
-* Наставник:[Виталий Драгулин](https://htmlacademy.ru/profile/id1008501)
+* Наставник: [Виталий Драгулин](https://htmlacademy.ru/profile/id1008501)
 
 ---
 
