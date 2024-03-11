@@ -41,42 +41,39 @@
     <main class="main-catalog">
       <section class="hero">
         <h1 class="main-title">Гостиницы Седоны</h1>
-        <img class="main-fon" src="#" alt="Фон-Гостиницы Седоны">
-      </section>
-          <section class="breadcrumbs">
+          <img class="main-fon" src="#" alt="Фон-Гостиницы Седоны">
             <ul class="breadcrumbs-list">
               <li class="breadscrumbs-item">
-               <a class="breadcrumbs-link" href="index.html">
-                <span class="visually-hidden">Иконка/домой</span>
+                <a class="breadcrumbs-link" href="index.html">
+                 <span class="visually-hidden">Иконка/домой</span>
                 </a>
               </li>
-              <li class="breadscrumbs-item">
-                >
-              </li>
-              <li class="breadscrumbs-item">
-                <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
-              </li>
+                <li class="breadscrumbs-item">
+                  <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+                </li>
             </ul>
-          </section>
+      </section>
           <section class="filter-search">
             <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-            <form class="filter-search-infra" action="#" method="get">
+            <form class="filter-search-infra" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-search-infra-group">
                 <legend class="filter-search-infra-title">Инфраструктура</legend>
                 <ul class="filter-search-infra-list">
-                  <li class="filter-search-infra-item"><label><input type="checkbox" value="Бассейн" checked>Бассейн</label></li>
-                  <li class="filter-search-infra-item"><label><input type="checkbox" value="Парковка"checked>Парковка</label></li>
-                  <li class="filter-search-infra-item"><label><input type="checkbox" value="WI-FI">WI-FI</label></li>
+                  <li class="filter-search-infra-item"><label><input type="checkbox" name="pool" value="Бассейн" checked>Бассейн</label></li>
+                  <li class="filter-search-infra-item"><label><input type="checkbox" name="parking" value="Парковка"checked>Парковка</label></li>
+                  <li class="filter-search-infra-item"><label><input type="checkbox" name="internet" value="WI-FI">WI-FI</label></li>
                 </ul>
               </fieldset>
               <fieldset class="filter-search-type-house">
                 <legend class="filter-search-type-house-title">Тип жилья</legend>
                 <ul class="filter-search-type-house-list">
-                  <li class="filter-search-type-house-item"><label><input type="radio" value="Гостиница" checked>Гостиница</label></li>
-                  <li class="filter-search-type-house-item"><label><input type="radio" value="Мотель">Мотель</label></li>
-                  <li class="filter-search-type-house-item"><label><input type="radio" value="Апартаменты">Апартаменты</label></li>
+                  <li class="filter-search-type-house-item"><label><input type="radio" name="house" value="Гостиница" checked>Гостиница</label></li>
+                  <li class="filter-search-type-house-item"><label><input type="radio" name="house" value="Мотель">Мотель</label></li>
+                  <li class="filter-search-type-house-item"><label><input type="radio" name="house" value="Апартаменты">Апартаменты</label></li>
                 </ul>
               </fieldset>
+              <button type="submit" class="filter-search-button">Применить</button>
+              <a class="filter-search-link-reset" type="reset"></a>
             </form>
           </section>
        <section class="subscribes">
