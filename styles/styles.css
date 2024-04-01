@@ -1,0 +1,157 @@
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+  ;
+}
+
+.page-header {
+  color:#000000;
+  background: #FFFFFF;
+
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 700;
+  text-align: center;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.main-index {
+  color: #333333;
+  background-color: #FFFFFF;
+  background-image: url("../images/index/index-background.jpg");
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: inherit;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.advantages-list li {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: 700;
+  background-color: #FFFFFF;
+    }
+
+.advantages-list li:nth-child(1),
+.advantages-list li:nth-child(5)
+{
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  }
+
+  .advantages ul p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  text-transform: none;
+
+}
+
+.advantages ul li:nth-child(1) p,
+.advantages ul li:nth-child(5) p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  font-weight: 400;
+  background-color: #82B3D3;
+  text-transform: none;
+
+
+}
+
+.services-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  }
+
+  h2>.services-description {
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
