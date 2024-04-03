@@ -45,6 +45,20 @@ body {
 
 }
 
+.visually-hidden {
+position: absolute;
+clip: rect(0 0 0 0);
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -57,14 +71,12 @@ body {
 }
 
 .main-hero {
-  color: #333333;
-  background-color: #FFFFFF;
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.navigation .button-navigation-link {
+.button-link {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -73,8 +85,10 @@ body {
   background-color: #756157;
   background-size: 160px 36px;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 50px 8px 50px;
+  margin: 1px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .advantages {
@@ -82,10 +96,10 @@ body {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
+
 }
 
-.advantages-place {
+.advantages-subject {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -95,11 +109,18 @@ body {
   text-decoration: none;
 }
 
+.advantages-description-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 400;
+}
+
 .advantages-item-blue {
   background-color: #82B3D3;
 }
 
-.advantages-item-blue .advantages-title {
+.advantages-title {
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
@@ -108,7 +129,7 @@ body {
 }
 
 
-.advantages-item-blue .advantages-description {
+.advantages-description-slogan {
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -118,7 +139,7 @@ body {
   text-transform: none;
 }
 
-.advantages-item .advantages-title {
+.advantages-subtitle {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -126,7 +147,7 @@ body {
   text-transform: uppercase;
 }
 
-.services h2 {
+.services-title-subject {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -146,15 +167,16 @@ body {
   background-color: #FFFFFF;
 }
 
-.services-description-first {
+.services-description-slogan {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   font-weight: 400;
   text-align: center;
+
 }
 
-.services h3 {
+.services-title {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -198,7 +220,7 @@ body {
   text-transform: none;
 }
 
-.search-hotel button {
+.search-hotel-button {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -207,6 +229,7 @@ body {
   background-color: #756157;
   background-size: 376px 52px;
   border-radius: 4px;
+  border: none;
   padding: 8px 50px;
   text-align: center;
   text-transform: uppercase;
@@ -222,7 +245,7 @@ body {
   background-image: url("../images/index/Subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
+  }
 
 .subscribes-title {
   font-size: 30px;
@@ -246,18 +269,6 @@ body {
   text-transform: uppercase;
 }
 
-.subscribes span {
-  font-size: 0;
-}
-
-.page-footer h2 {
-  font-size: 0;
-}
-
-.footer-phone h2 {
-  font-size: 0;
-}
-
 .footer-phone-number {
   font-size: 40px;
   line-height: 40px;
@@ -266,11 +277,8 @@ body {
   text-decoration-line: none;
 }
 
-.footer-contacts-logo {
-  font-size: 0;
-}
-
 /* Catalog */
+
 .main-hero-catalog {
   background-image: url("../images/catalog/background-filter.jpg");
   background-size: 100% auto;
@@ -286,23 +294,19 @@ body {
 
 }
 
-.visually-hidden-name {
-  font-size: 0;
-}
-
-.breadscrumbs-item .breadcrumbs-link-text {
+.breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   text-decoration-line: none;
 }
 
-form {
+.filter-search-infrastructure {
   color: #FFFFFF;
   background-color: #000000;
 }
 
-.filter-search-infra-title,
+.infrastructure-title,
 .filter-search-type-house-title,
 .filter-search-price {
   font-size: 20px;
@@ -310,7 +314,7 @@ form {
   font-weight: 700;
 }
 
-.filter-search-infra-list {
+.infrastructure-list {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -327,4 +331,36 @@ form {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+.button-submit {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-size: 191px 36px;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px 8px 50px;
+  gap: 10px;
+  margin: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-reset {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-size: 191px 36px;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px 8px 50px;
+  gap: 10px;
+  margin: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
