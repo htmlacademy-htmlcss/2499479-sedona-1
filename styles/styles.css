@@ -56,7 +56,6 @@ body {
   text-decoration: none;
 }
 
-
 .main-hero {
   color: #333333;
   background-color: #FFFFFF;
@@ -108,7 +107,9 @@ h2 {
   text-transform: uppercase;
 }
 
+
 .advantages-item-blue .advantages-description {
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
