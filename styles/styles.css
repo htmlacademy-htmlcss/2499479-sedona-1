@@ -30,13 +30,30 @@
   font-display: swap;
 }
 
+html {
+height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
   ;
+}
+
+.container {
+margin: 0 auto;
+width: 1200px;
+}
+
+.main-container {
+flex-grow: 1;
 }
 
 .page-header {
