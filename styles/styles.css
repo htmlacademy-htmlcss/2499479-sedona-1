@@ -172,6 +172,8 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -199,27 +201,23 @@ body {
   font-weight: 400;
 }
 
-.advantages-item-blue-up {
+.advantages-item-blue {
   display: flex;
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
 }
 
-.advantages-container-blue-up {
+.advantages-container-blue {
   display: flex;
   flex-direction: column;
   width: 400px;
   background-color: #82B3D3;
 }
 
-.advantages-photo-1 {
-  margin-left: auto;
-}
-
 .advantages-title {
-  margin: 0;
-  padding: 102px 112.5px 62px 112.5px;
+  margin: 0 112.5px;
+  padding-top: 102px;
   align-items: center;
   font-size: 24px;
   line-height: 28px;
@@ -230,8 +228,8 @@ body {
 
 
 .advantages-description-slogan {
-  margin: 0;
-  padding: 0 85px 102px 85px;
+  margin-top: 62px;
+  padding: 0 85px;
   align-items: center;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -241,18 +239,12 @@ body {
   text-transform: none;
 }
 
-.container-advantages-item {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-
 .advantages-item {
   display: block;
-  width: 400;
+  box-sizing: border-box;
+  width: 400px;
   margin: 0;
-  padding: 103px 85px 103px 85px;
+  padding: 112.5px 85px;
 }
 
 .advantages-subtitle {
@@ -263,52 +255,21 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-item-blue-down {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.advantages-container-blue-down {
-  display: block;
-  margin-left: auto;
-  padding: 102px 85px 102px 85px;
-  margin: 0;
-  width: 400px;
-  background-color: #82B3D3;
-}
-
-.advantages-photo-2 {
-  margin-right: auto;
-}
-
-.advantages-title-down {
-
-  margin: 0;
-  align-items: center;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-
-.advantages-description-slogan-down {
-  margin: 0;
-  align-items: center;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-  font-weight: 400;
-  text-transform: none;
+.services-container{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .services-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-}
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  }
 
 .services-title-subject {
   font-size: 30px;
@@ -323,11 +284,15 @@ body {
 .services-item-souvenirs {
   background-color: #83B3D3;
   text-align: center;
-}
+  width: 400px;
+  padding: 81px 85px;
+ }
 
 .services-item {
   text-align: center;
   background-color: #FFFFFF;
+  width: 400px;
+  padding: 81px 85px;
 }
 
 .services-description-slogan {
@@ -364,8 +329,16 @@ body {
 }
 
 .search-hotel {
+  display: flex;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.search-container{
+display: block;
+margin: 96px 0;
+width: 592px;
 }
 
 .search-title {
@@ -399,15 +372,25 @@ body {
 }
 
 .subscribes {
+  display: flex;
+  justify-content: center;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #FFFFFF;
   text-align: center;
-  background-image: url("../images/index/Subscribe-background.jpg");
+  background-image: url("../images/index/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.subscribes-container{
+display: flex;
+flex-direction: column;
+width: 684px;
+margin-top: 96px;
+margin-bottom: 104px;
 }
 
 .subscribes-title {
@@ -432,11 +415,33 @@ body {
   text-transform: uppercase;
 }
 
+.page-footer {
+display: flex;
+justify-content: baseline;
+width: 1200px;
+padding: 0 70px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: baseline;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 .social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
   list-style: none;
+  padding-left: 0;
 }
 
 .footer-phone-number {
+  display: flex;
+  justify-content: center;
+  margin: 0 41.5px;
+    width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
