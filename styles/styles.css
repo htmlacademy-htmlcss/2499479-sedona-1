@@ -146,6 +146,8 @@ body {
 .main-name-logo-sedona {
   display: block;
   margin: 0 auto;
+  margin-top: 51px;
+  margin-left: 371px;
 }
 
 .button-link {
@@ -178,7 +180,7 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-top: 21px;
   padding: 0;
   list-style: none;
 }
@@ -187,8 +189,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding-top: 69px;
   width: 620px;
-  height: 72px;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -203,6 +205,8 @@ body {
   line-height: 26px;
   color: #333333;
   font-weight: 400;
+  padding-top: 25px;
+  padding-bottom: 69px;
 }
 
 .advantages-item-blue {
