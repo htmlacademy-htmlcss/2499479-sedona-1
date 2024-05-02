@@ -120,6 +120,7 @@ body {
 .navigation-menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 339px;
   margin: 20px 16px;
@@ -128,6 +129,7 @@ body {
 .navigation-user {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 88px;
   margin-left: auto;
@@ -435,6 +437,7 @@ body {
 .social-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 142px;
   list-style: none;
   padding-left: 0;
@@ -747,7 +750,7 @@ body {
   text-decoration: none;
 }
 
-.pagination-list-start {
+.pagination-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
