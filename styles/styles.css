@@ -295,7 +295,7 @@ body {
   margin: 0;
   padding: 0;
   padding: 0 314.5px;
-  }
+}
 
 .services-list {
   display: flex;
@@ -307,6 +307,7 @@ body {
   padding: 0;
   margin-top: 64px;
 }
+
 .services-title-subject {
   margin: 0;
   font-size: 30px;
@@ -319,7 +320,7 @@ body {
 
 .services-item-house,
 .services-item-souvenirs {
-  background-color: #83B3D3;
+  background-color: #F2F2F2;
   text-align: center;
   width: 400px;
   padding: 81px 85px;
@@ -335,7 +336,6 @@ body {
 .services-description-slogan {
   margin: 0;
   padding-top: 20px;
-
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -345,6 +345,8 @@ body {
 }
 
 .services-title {
+  margin: 0;
+  margin-top: 30px;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -352,16 +354,9 @@ body {
   text-transform: uppercase;
 }
 
-.services-title-eat {
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.services-description-house,
-.services-description-souvenirs {
+.services-description {
+  margin: 0;
+  margin-top: 30px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -371,17 +366,20 @@ body {
 .search-hotel {
   display: flex;
   justify-content: center;
+  margin: 0;
+  margin-top: 96px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .search-container {
   display: block;
-  margin: 96px 0;
+  margin: 0;
   width: 592px;
 }
 
 .search-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -389,6 +387,8 @@ body {
 }
 
 .search-description {
+  margin: 0;
+  margin-top: 20px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -406,6 +406,8 @@ body {
   background-size: 376px 52px;
   border-radius: 4px;
   border: none;
+  margin: 0;
+  margin-top: 54px;
   padding: 8px 50px;
   text-align: center;
   text-transform: uppercase;
@@ -413,6 +415,11 @@ body {
 
 .subscribes {
   display: flex;
+  margin: 0;
+  margin-top: 96px;
+  padding: 0;
+  padding-top: 96px;
+  padding-bottom: 104px;
   justify-content: center;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -429,11 +436,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 684px;
-  margin-top: 96px;
-  margin-bottom: 104px;
+  margin: 0;
 }
 
 .subscribes-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -441,7 +448,33 @@ body {
   text-transform: uppercase;
 }
 
+.subscribes-description {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.subscribes-newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 54px;
+
+}
+
+input[type="email"] {
+  display: flex;
+  width: 452px;
+  height: 52px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  border-radius: 4px 0 0 4px;
+  border: hidden;
+}
+
 .subscribes-button {
+  margin: 0;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -457,31 +490,53 @@ body {
 
 .page-footer {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
   width: 1200px;
+  margin: 0;
+  margin-top: 40px;
   padding: 0 70px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: baseline;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+
 }
 
 .social-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 142px;
-  list-style: none;
-  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 47.33px;
+  height: 40px;
+}
+
+.footer-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-phone-number {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 41.5px;
+  padding: 0;
   width: 720px;
   font-size: 40px;
   line-height: 40px;
@@ -490,16 +545,27 @@ body {
   text-decoration-line: none;
 }
 
-/* Catalog */
-
-.main-hero-catalog {
+.footer-contacts-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------------------------------Catalog ---------------------------------------------------------------*/
+.main-hero-catalog {
+    margin: 0;
+  padding: 70px;
+  padding-top: 35px;
   background-image: url("../images/catalog/background-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .main-hero-catalog .main-title {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 60px;
   line-height: 78px;
@@ -523,7 +589,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   color: #FFFFFF;
-  background-color: #000000;
+
 }
 
 .filter-container {
