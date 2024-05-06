@@ -555,7 +555,7 @@ input[type="email"] {
 
 /* -------------------------------------------------------------------Catalog ---------------------------------------------------------------*/
 .main-hero-catalog {
-    margin: 0;
+  margin: 0;
   padding: 70px;
   padding-top: 35px;
   background-image: url("../images/catalog/background-filter.jpg");
@@ -575,10 +575,18 @@ input[type="email"] {
 }
 
 .breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  justify-content: start;
+  align-items: center;
+  margin-top: 8px;
+
 }
 
 .breadcrumbs-link {
+  margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
@@ -589,16 +597,17 @@ input[type="email"] {
   display: flex;
   flex-wrap: wrap;
   color: #FFFFFF;
-
 }
 
 .filter-container {
-  display: inline;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 1060px;
   margin: 0;
+  margin-top: 40px;
+  padding: 0;
 }
 
 .infrastructure-group {
@@ -606,6 +615,7 @@ input[type="email"] {
   justify-content: center;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .filter-search-type-house {
@@ -613,11 +623,13 @@ input[type="email"] {
   justify-content: center;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .filter-search-price {
   display: block;
   width: 288px;
+  border: none;
 }
 
 .infrastructure-title,
@@ -650,23 +662,33 @@ input[type="email"] {
 }
 
 .button-submit {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 191px;
+  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #82B3D3;
-  background-size: 191px 36px;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px 8px 50px;
-  gap: 10px;
-  margin: 1px;
+  padding: 0;
+  margin: 0;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .button-reset {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 191px;
+  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -676,9 +698,8 @@ input[type="email"] {
   background-size: 191px 36px;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px 8px 50px;
-  gap: 10px;
-  margin: 1px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -690,6 +711,7 @@ input[type="email"] {
   margin: 0 auto;
   box-sizing: border-box;
   margin-top: 50px;
+  padding: 0 70px;
 }
 
 .catalog-control-view-list {
@@ -703,11 +725,13 @@ input[type="email"] {
 }
 
 .catalog-title {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
   margin: 0;
+  margin-right: 200px;
 }
 
 .catalog-control {
@@ -719,30 +743,38 @@ input[type="email"] {
   font-weight: 400;
   color: #333333;
   background-color: #FFFFFF;
+  margin: 0;
+  margin-right: 70px;
 }
 
 .button-control-view-table {
   display: block;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   border: 2px solid#000000;
   border-radius: 4px;
-  padding: 14px, 12px, 14px, 12px;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-control-icon-table {
-
   margin-top: 16px;
   margin-left: 15px;
 }
 
 .button-control-view-sketch {
   display: block;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   border: 2px solid#E5E5E5;
   border-radius: 4px;
-  padding: 14px, 12px, 14px, 12px;
+  margin: 0;
+  padding: 0;
+
 }
 
 .catalog-control-icon-sketch {
@@ -753,11 +785,14 @@ input[type="email"] {
 
 .button-control-view-list {
   display: block;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   border: 2px solid#E5E5E5;
   border-radius: 4px;
-  padding: 14px, 12px, 14px, 12px;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-control-icon-list {
@@ -780,73 +815,99 @@ input[type="email"] {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1060px;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
 }
 
 .hotel-card-link {
+  display: block;
+  justify-content: flex-start;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
   text-decoration-line: none;
+  padding: 0;
 }
 
 .hotel-card-item {
-  display: block;
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
   width: 340px;
   padding: 20px;
 }
 
+.hotel-card-title {
+  margin: 0;
+margin-top: 16px;
+}
+
 .hotel-card-item p {
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   background-color: #FFFFFF;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .button-hotel-card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  width: 140px;
+  height: 36px;
   color: #FFFFFF;
   background-color: #756157;
-  background-size: 140px 36px;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px 8px 50px;
-  margin: 1px;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .hotel-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #82B3D3;
-  background-size: 140px 36px;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px 8px 50px;
-  margin: 1px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .hotel-card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #333333;
   background-color: #F2F2F2;
-  background-size: 140px 36px;
   border-radius: 4px;
   border: none;
-  padding: 8px 50px 8px 50px;
-  margin: 1px;
+  padding: 0;
+  margin: 0;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -856,12 +917,16 @@ input[type="email"] {
   flex-wrap: wrap;
   justify-content: start;
   list-style: none;
+  margin: 0;
   padding: 0;
   margin-left: 70px;
+  margin-top: 80px;
 }
 
 .pagination-current {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -871,11 +936,15 @@ input[type="email"] {
   background-repeat: no-repeat;
   text-decoration: none;
   text-transform: none;
-  padding: 12px 25px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
 }
 
 .pagination-link-hidden-pages {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -885,36 +954,44 @@ input[type="email"] {
   background-repeat: no-repeat;
   text-decoration: none;
   text-transform: none;
-  padding: 12px 23px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
   background-image: url("../images/catalog/pagination-unselected.svg");
-  background-size: 60px 60px;
   background-repeat: no-repeat;
   text-decoration: none;
   text-transform: none;
-  padding: 12px 25px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
   margin-left: 8px;
 }
 
 .pagination-link-last-page {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
   background-image: url("../images/catalog/pagination-unselected.svg");
-  background-size: 60px 60px;
   background-repeat: no-repeat;
   text-decoration: none;
   text-transform: none;
-  padding: 12px 20px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
 }
 
 .subscribes-catalog {
@@ -931,6 +1008,7 @@ input[type="email"] {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin: 0;
+  margin-top: 156px;
 }
 
 .subscribes-catalog-title {
