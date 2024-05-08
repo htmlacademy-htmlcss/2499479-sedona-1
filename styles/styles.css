@@ -826,22 +826,16 @@ input[type="email"] {
 
 .hotel-card-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   width: 1200px;
-  margin: 40px 70px 0 70px;
-  padding: 0;
-}
-
-/*.hotel-card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1060px;
   margin: 0;
-  margin-top: 40px;
   padding: 0;
-}*/ разобрать
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  gap: 20px;
+}
 
 .hotel-card-link {
   display: block;
@@ -864,6 +858,7 @@ input[type="email"] {
   border-radius: 4px;
   width: 340px;
   padding: 20px;
+
 }
 
 .hotel-card-title {
