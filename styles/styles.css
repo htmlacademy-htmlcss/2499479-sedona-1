@@ -853,6 +853,7 @@ input[type="email"] {
 }
 
 .button-hotel-card-link {
+  text-align: center;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
@@ -866,11 +867,13 @@ input[type="email"] {
   text-transform: uppercase;
   text-decoration: none;
   padding: 0;
+  padding-top: 8px;
   margin: 0;
 }
 
 .hotel-card-button {
   box-sizing: border-box;
+  text-align: center;
   width: 140px;
   height: 36px;
   font-size: 16px;
