@@ -92,6 +92,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -103,6 +104,16 @@ body {
   margin: 0;
   padding: 20px 16px;
 
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: rgba(117, 98, 87, 1);
+  content: "";
 }
 
 .navigation-link-logo-sedona {
@@ -594,6 +605,15 @@ input[type="email"] {
   color: #FFFFFF;
   text-decoration-line: none;
 }
+
+/* .breadcrumbs-link::before {
+padding-right: 0;
+  background-image: url("../images/catalog/breadscrumbs/breadscrumbs-icon-arrow.svg");
+  background-repeat: no-repeat;
+background-size: 10px 7px;
+background-position: center right 8px;
+
+} */
 
 .filter-search-infrastructure {
   display: flex;
