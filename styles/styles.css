@@ -537,7 +537,22 @@ input[type="email"] {
   margin: 0;
   width: 47.33px;
   height: 40px;
+  color: #82B3D3;
 }
+
+.button-social:hover {
+  color: #68A2CA;
+}
+
+.button-social:focus {
+  color: #68A2CA;
+}
+
+.button-social:active {
+  color: #68A2CA;
+  opacity: 0.3;
+}
+
 
 .footer-phone {
   display: flex;
@@ -559,10 +574,40 @@ input[type="email"] {
   text-decoration-line: none;
 }
 
+.footer-phone-number:hover {
+  color: #756157;
+}
+
+.footer-phone-number:focus {
+  color: #756157;
+}
+
+.footer-phone-number:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
 .footer-logo {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+.footer-contact-webcite {
+  color: #000000;
+}
+
+.footer-contact-webcite:hover {
+  color: #756157;
+}
+
+.footer-contact-webcite:focus {
+  color: #756157;
+}
+
+.footer-contact-webcite:active {
+  color: #756157;
+  opacity: 0.3;
 }
 
 /*-------------------------------------------------------------------Catalog ---------------------------------------------------------------*/
@@ -606,14 +651,16 @@ input[type="email"] {
   text-decoration-line: none;
 }
 
-/* .breadcrumbs-link::before {
-padding-right: 0;
+.breadcrumbs-icon {
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
   background-image: url("../images/catalog/breadscrumbs/breadscrumbs-icon-arrow.svg");
   background-repeat: no-repeat;
-background-size: 10px 7px;
-background-position: center right 8px;
+  background-size: auto;
+  background-position: center right 8px;
 
-} */
+}
 
 .filter-search-infrastructure {
   display: flex;
@@ -841,6 +888,7 @@ background-position: center right 8px;
   margin-top: 16px;
   margin-left: 15px;
 }
+
 /* --------------------------------------Каталог и карточки на гридах-----------------------------------------------------------------------*/
 .hotel-card-list {
   display: grid;
