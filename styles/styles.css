@@ -641,14 +641,12 @@ background-position: center right 8px;
 }
 
 .filter-search-type-house {
-  display: flex;
   margin: 0;
   padding: 0;
   border: none;
 }
 
 .filter-search-price {
-  display: flex;
   border: none;
   margin: 0;
   padding: 0;
@@ -893,8 +891,8 @@ background-position: center right 8px;
 }
 
 .hotel-card-button {
-  box-sizing: border-box;
-  align-items: center;
+  padding: 8px 20px;
+  font-family: inherit;
   text-align: center;
   width: 140px;
   height: 36px;
@@ -936,7 +934,6 @@ background-position: center right 8px;
 }
 
 .hotel-card-rating {
-  box-sizing: border-box;
   display: grid;
   align-items: center;
   text-align: center;
