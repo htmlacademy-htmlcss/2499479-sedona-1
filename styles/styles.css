@@ -521,7 +521,7 @@ body {
 }
 
 .search-hotel-button:active {
-  background-color:rgba(117, 97, 87, 1);
+  background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -598,7 +598,7 @@ input[type="email"] {
   line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
-  background-color:rgba(130, 179, 211, 1);
+  background-color: rgba(130, 179, 211, 1);
   background-size: 232px 52px;
   border-radius: 0 4px 4px 0;
   border: hidden;
@@ -617,7 +617,7 @@ input[type="email"] {
 
 .subscribes-button:active {
   background-color: rgba(130, 179, 211, 1);
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribes-button:disabled {
@@ -766,23 +766,27 @@ input[type="email"] {
 }
 
 .breadcrumbs-link {
+  position: relative;
   display: flex;
-  margin-right: 28px;
+  margin-right: 18px;
+  padding-right: 10px;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   text-decoration-line: none;
 }
 
-.breadcrumbs-icon {
-  margin: 0;
-  padding: 0;
-  padding-right: 25px;
-  background-image: url("../images/catalog/breadscrumbs/breadscrumbs-icon-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center right 8px;
 
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  /* display: flex;
+  align-items: center; */
+  content: url("../images/catalog/breadscrumbs/arrow.svg");
+  width: 8px;
+  height: 20px;
+  background-repeat: no-repeat;
+  right: 10px;
+  top: -4px;
 }
 
 .filter-search-infrastructure {
@@ -849,6 +853,14 @@ input[type="email"] {
   margin-top: 32px;
 }
 
+.infrastructure-item:hover input[type=checkbox] {
+  opacity: 0.5;
+}
+
+.infrastructure-item:not(:first-child) {
+  padding-top: 16px;
+}
+
 .filter-search-type-house-list {
   font-size: 18px;
   line-height: 23px;
@@ -857,6 +869,10 @@ input[type="email"] {
   padding: 0;
   margin: 0;
   margin-top: 32px;
+}
+
+.filter-search-type-house-item:not(:first-child) {
+  padding-top: 16px;
 }
 
 .filter-price {
@@ -913,6 +929,7 @@ input[type="email"] {
   border-radius: 4px;
   border: none;
   margin: 0;
+  margin-top: 32px;
   padding: 0;
   text-transform: uppercase;
   text-decoration: none;
