@@ -418,19 +418,29 @@ body {
   text-transform: uppercase;
 }
 
-.services-item-house,
-.services-item-souvenirs {
-  background-color: rgba(131, 179, 211, 0.12);
-  text-align: center;
-  width: 400px;
-  padding: 81px 85px;
-}
-
 .services-item {
   text-align: center;
   background-color: #FFFFFF;
   width: 400px;
   padding: 81px 85px;
+}
+
+/* .item-house {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/index/services/advantages-icon-house.svg);
+  background-repeat: no-repeat;
+  background-position:  center 81px;
+} */
+
+.item-house,
+.item-souvenirs {
+  background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
+  width: 400px;
+  padding: 81px 85px;
+  /* margin-top: 102px; */
 }
 
 .services-description-slogan {
