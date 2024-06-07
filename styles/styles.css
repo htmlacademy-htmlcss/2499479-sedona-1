@@ -181,7 +181,11 @@ body {
 .item-icon-favorites {
   position: relative;
 }
+
 .text-favorites-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   content: "";
   font-size: 10px;
@@ -189,7 +193,6 @@ body {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   text-align: center;
-  vertical-align: center;
   background-color: rgba(125, 181, 79, 1);
   width: 20px;
   height: 20px;
@@ -197,18 +200,6 @@ body {
   top: 11px;
   right: 4px;
 }
-
-/* .icon-favorites
-.text-favorites-icon {
-  position: absolute;
-  content: "";
-  background-color: rgba(125, 181, 79, 1);
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  top: 11px;
-  right: 4px;
-} */
 
 .navigation-link-icon:hover {
   color: #000000;
@@ -220,6 +211,20 @@ body {
 }
 
 .navigation-link-icon:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.item-icon-favorites:hover {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.item-icon-favorites:focus {
+  color: #000000;
+}
+
+.item-icon-favorites:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -391,7 +396,7 @@ body {
 .advantages-subtitle {
   position: relative;
   margin: 0;
-  padding: 30px;
+  padding-bottom: 30px;
   width: 175px;
   font-size: 24px;
   line-height: 28px;
@@ -1319,114 +1324,6 @@ input[type="email"] {
   text-decoration: none;
 }
 
-/* --------------------------------------Каталог на флексах-----------------------------------------------------------------------
-.hotel-card-list {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0 70px;
-  margin-top: 40px;
-  gap: 20px;
-}
-*/
-/*.hotel-card-link {
-  display: block;
-  justify-content: flex-start;
-  margin: 0;
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration-line: none;
-  padding: 0;
-}
-*/
-/*.hotel-card-item {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border: 1px solid #E6E6E6;
-  border-radius: 4px;
-  width: 340px;
-  padding: 20px;
-
-}
-
-.hotel-card-title {
-  margin: 0;
-  margin-top: 16px;
-}
-
-.hotel-card-item p {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-  background-color: #FFFFFF;
-  margin: 0;
-  margin-top: 16px;
-}
-
-.hotel-card-item .hotel-card-rating {
-  background-color: rgba(242, 242, 242, 1);
-}
-
-.button-hotel-card-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  width: 140px;
-  height: 36px;
-  color: #FFFFFF;
-  background-color: #756157;
-  border-radius: 4px;
-  border: none;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.hotel-card-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  border-radius: 4px;
-  border: none;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.hotel-card-rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #333333;
-  background-color:rgba(242, 242, 242, 1);
-  border-radius: 4px;
-  border: none;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-*/
 /*----------------------------------Пагинация------------------------------------*/
 .pagination-list {
   display: flex;
@@ -1541,6 +1438,7 @@ input[type="email"] {
   background-repeat: no-repeat;
   margin: 0;
   margin-top: 156px;
+  padding-bottom: 104px;
 }
 
 .subscribes-catalog-title {
