@@ -1485,8 +1485,9 @@ input[type="email"] {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 70px;
-  right: 64px;
+  margin: 0;
+  top: 64;
+  right: 52px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -1496,8 +1497,131 @@ input[type="email"] {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-
+}
+.date {
+  display: flex;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
 }
 .modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
   text-transform: uppercase;
+
+}
+
+.auth-form-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+
+.field-group-date{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.field-date {
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  width: 440px;
+  margin: 0;
+  padding: 12px 20px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.auth-form-age {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+}
+
+.field-group-age{
+  display: flex;
+  align-items: center;
+
+  width: 247px;
+  margin: 0;
+  }
+
+
+.adults {
+   font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-right: 46px;
+
+}
+
+.children {
+  position: relative;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-right: 46px;
+  padding-right: 36px;
+
+}
+
+.field-age{
+  width: 110px;
+  padding: 14px 10px;
+  margin: 0;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4px;
+}
+
+.group-children {
+  justify-content: end;
+
+}
+
+.button-modal {
+  margin-top: 40px;
+  height: 60px;
+  width: 577px;
+  border-radius: 10px;
+}
+
+.tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "";
+  font-size: 14px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(131, 179, 211, 1);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
 }
