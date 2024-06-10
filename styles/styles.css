@@ -1331,8 +1331,12 @@ input[type="email"] {
   justify-content: start;
   list-style: none;
   margin: 0;
-  padding: 0 70px;
-  margin-top: 80px;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 70px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  width: 1060px;
 }
 
 .pagination-item:not(:first-child) {
@@ -1451,4 +1455,49 @@ input[type="email"] {
 
 .footer-social-list {
   list-style: none;
+}
+.modal-container-close {
+  display: none;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+  border: none;
+}
+
+.modal-auth {
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 70px;
+  right: 64px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
+  background-image: url("../images/modal/button-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+}
+.modal-title {
+  text-transform: uppercase;
 }
