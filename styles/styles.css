@@ -134,6 +134,7 @@ body {
 .navigation-link-logo-sedona {
   display: flex;
   margin-bottom: -6px;
+  z-index: 1;
 }
 
 .navigation-link-logo-sedona:hover {
@@ -230,11 +231,30 @@ body {
 }
 
 .main-hero {
+  position: relative;
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
+  width: 100%;
   background-repeat: no-repeat;
+  padding: 0;
   padding-top: 51px;
   padding-bottom: 81px;
+  color: #ffffff;
+  background-color: #000000;
+
+}
+
+.main-hero::after {
+  position: absolute;
+  content: "";
+  width: 101%;
+  height: 57px;
+  left: -1.5px;
+  bottom: 0;
+  background-image: url("../images/index/background-border.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 1;
 }
 
 .main-name-logo-sedona {
@@ -943,12 +963,52 @@ input[type="email"] {
   margin-top: 32px;
 }
 
-.infrastructure-item:hover input[type=checkbox] {
-  opacity: 0.5;
-}
-
 .infrastructure-item:not(:first-child) {
   padding-top: 16px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark {
+  opacity: 1;
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+
+.control-input:disabled + .control-mark {
+  border-color: #242424;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after{
+  position: absolute;
+  background-size: 12px 10px;
+  background-repeat: no-repeat;
+  content:  url("../images/catalog/selected-checkbox.svg");
+  bottom: -1px;
+  left: 4px;
 }
 
 .filter-search-type-house-list {
@@ -972,45 +1032,127 @@ input[type="email"] {
   margin-bottom: 32px;
 }
 
-.price-from,
-.price-to {
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-
+.price {
+  display: flex;
 }
 
-.number-from {
-  appearance: none;
-  height: 48px;
-  background-color: rgba(242, 242, 242, 1);
-  font-weight: 700;
+.price input {
   width: 143px;
-  border: none;
+  height: 48px;
   padding: 12px 20px;
+  padding-right: 40px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-from-field {
+  margin-right: 2px;
   border-radius: 4px 0 0 4px;
 }
 
-.number-from:focus {
-  outline: 3px solid rgba(131, 179, 211, 1);
-}
-
-.number-to {
-  appearance: none;
-  height: 48px;
-  background-color: rgba(242, 242, 242, 1);
-  font-weight: 700;
-  width: 143px;
-  border: none;
-  padding: 12px 20px;
+.price-to-field {
+  margin-right: 0;
   border-radius: 0 4px 4px 0;
 }
 
-.number-to:focus {
+.price label {
+  position: relative;
+}
+
+.price span {
+  position: absolute;
+  content: "от";
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(170, 170, 170);
+}
+
+.price-to-end {
+  position: relative;
+}
+
+.price-to {
+  position: absolute;
+  content: "до";
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(170, 170, 170);
+
+}
+
+.price-from-field:focus,
+.price-to-field:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 48px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.range-bar:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
 
 .button-blue {
   box-sizing: border-box;
@@ -1456,9 +1598,11 @@ input[type="email"] {
 .footer-social-list {
   list-style: none;
 }
+
 .modal-container-close {
   display: none;
 }
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1467,6 +1611,7 @@ input[type="email"] {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .modal {
@@ -1486,7 +1631,7 @@ input[type="email"] {
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 64;
+  top: 64px;
   right: 52px;
   width: 52px;
   height: 52px;
@@ -1498,6 +1643,7 @@ input[type="email"] {
   background-position: center;
   cursor: pointer;
 }
+
 .date {
   display: flex;
   margin: 0;
@@ -1508,6 +1654,7 @@ input[type="email"] {
   align-items: center;
   justify-content: center;
 }
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1529,14 +1676,16 @@ input[type="email"] {
 }
 
 
-.field-group-date{
+.field-group-date {
   position: relative;
+  justify-content: space-between;
   display: flex;
   margin: 0;
   margin-bottom: 48px;
 }
 
 .field-date {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1549,26 +1698,38 @@ input[type="email"] {
   border-radius: 4px;
   font: inherit;
 }
+
+.date-button {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 20px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+}
+
 .date-text {
   margin: 0;
   position: absolute;
   content: "";
   bottom: -25px;
-  right: 140px;
+  right: 110px;
+  color: rgba(255, 87, 87, 1);
 }
 
 .auth-form-age {
   display: flex;
-  /* justify-content: space-between; */
   margin: 0;
 
 }
 
-.field-group-age{
+.field-group-age {
   display: flex;
   align-items: center;
-   margin: 0;
-  }
+  margin: 0;
+}
 
 
 .adults {
@@ -1580,10 +1741,11 @@ input[type="email"] {
   margin-right: 46px;
 
 }
+
 .wrapper {
   display: flex;
   align-items: center;
-margin-right: 88px;
+  margin-right: 88px;
 }
 
 .wrapper-children {
@@ -1606,14 +1768,13 @@ margin-right: 88px;
 
 }
 
-.field-age{
+.field-age {
   width: 31px;
   height: 48px;
   padding: 14px 10px;
   margin: 0;
   background-color: rgba(242, 242, 242, 1);
   border: none;
-   /* -webkit-appearance: none; */
 }
 
 .group-children {
@@ -1653,6 +1814,7 @@ margin-right: 88px;
   margin: 0;
   display: block;
 }
+
 .tooltip-icon {
   position: absolute;
   content: "";
@@ -1663,7 +1825,7 @@ margin-right: 88px;
   height: 12px;
   left: 12px;
   top: 7px;
- }
+}
 
 .tooltip-toggle:hover .tooltip-icon {
   opacity: 0.8;

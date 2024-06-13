@@ -210,19 +210,41 @@
             <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
             <form class="auth-form-date" action="https://echo.htmlacademy.ru/" method="post">
               <div class="field-group-date">
-                <label class="date" for="auth-date">Дата Заезда:</label>
-                <input class="field-date" type="text" id="auth-date" name="date" placeholder="27 апреля 2020">
+                <label class="date">Дата Заезда:</label>
+                <input class="field-date" type="text" placeholder="27 апреля 2020">
+                <button class="date-button" type="button">
+                  <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g opacity=".3" fill="#000">
+                      <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
+                      <path
+                        d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" />
+                      <path
+                        d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                    </g>
+                  </svg>
+                </button>
                 <span class="date-text">Мы не можем отправить вас в прошлое</span>
               </div>
-
               <p class="field-group-date">
-                <label class="date" for="auth-date">Дата Выезда:</label>
-                <input class="field-date" type="text" id="auth-date" name="date" placeholder="1 сентября 2021">
+                <label class="date">Дата Выезда:</label>
+                <input class="field-date" type="text" placeholder="1 сентября 2021">
+                <button class="date-button" type="button">
+                  <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g opacity=".3" fill="#000">
+                      <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
+                      <path
+                        d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" />
+                      <path
+                        d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                    </g>
+                  </svg>
+                </button>
               </p>
               <div class="auth-form-age">
                 <div class="field-group-age">
-                  <label class="adults" for="auth-age">Взрослые:
-                  </label>
+                  <label class="adults">Взрослые:</label>
                   <div class="wrapper">
                     <button class="button-minus">
                       <span class="visually-hidden">Уменьшить</span>
@@ -235,10 +257,10 @@
                 </div>
                 <div class="field-group-age">
                   <span class="children">
-                    <label class="group-children" for="auth-age">Дети:</label>
+                    <label class="group-children">Дети:</label>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button">
-                        <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="currentColor"
+                        <svg class="tooltip-icon" width="2" height="12" viewbox="0 0 2 12" fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                         </svg>
