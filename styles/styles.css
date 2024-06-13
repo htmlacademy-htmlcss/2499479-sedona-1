@@ -999,7 +999,7 @@ input[type="email"] {
 
 
 .control-input:disabled + .control-mark {
-  border-color: #242424;
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after{
@@ -1009,6 +1009,21 @@ input[type="email"] {
   content:  url("../images/catalog/selected-checkbox.svg");
   bottom: -1px;
   left: 4px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(63, 94, 114, 1);
+  border-radius: 50%;
+  content: "";
 }
 
 .filter-search-type-house-list {
