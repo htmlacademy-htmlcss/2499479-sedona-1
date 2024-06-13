@@ -991,7 +991,7 @@ input[type="email"] {
 
 .control:focus .control-mark {
   opacity: 1;
-}
+ }
 
 .control:active .control-mark {
   opacity: 0.3;
@@ -1725,13 +1725,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-.date-text {
+.date-text-red {
   margin: 0;
   position: absolute;
   content: "";
   bottom: -25px;
-  right: 110px;
+  left: 160px;
   color: rgba(255, 87, 87, 1);
+}
+
+.date-text-black {
+  margin: 0;
+  position: absolute;
+  content: "";
+  bottom: -25px;
+  left: 160px;
+  color: rgba(51, 51, 51, 1);
 }
 
 .auth-form-age {
@@ -1878,6 +1887,7 @@ input[type=number]::-webkit-outer-spin-button {
   border: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .button-plus {
