@@ -1530,28 +1530,36 @@ input[type="email"] {
 
 
 .field-group-date{
+  position: relative;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   margin-bottom: 48px;
 }
 
 .field-date {
-  display: inline;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 440px;
   margin: 0;
+  margin-left: 24px;
   padding: 12px 20px;
   background-color: rgba(242, 242, 242, 1);
   border: none;
   border-radius: 4px;
   font: inherit;
 }
+.date-text {
+  margin: 0;
+  position: absolute;
+  content: "";
+  bottom: -25px;
+  right: 140px;
+}
 
 .auth-form-age {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0;
 
 }
@@ -1559,69 +1567,146 @@ input[type="email"] {
 .field-group-age{
   display: flex;
   align-items: center;
-
-  width: 247px;
-  margin: 0;
+   margin: 0;
   }
 
 
 .adults {
-   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-right: 46px;
-
-}
-
-.children {
-  position: relative;
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   margin-right: 46px;
-  padding-right: 36px;
+
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+margin-right: 88px;
+}
+
+.wrapper-children {
+  display: flex;
+
+  align-items: center;
+  margin-left: 46px;
+}
+
+.children {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 
 }
 
 .field-age{
-  width: 110px;
+  width: 31px;
+  height: 48px;
   padding: 14px 10px;
   margin: 0;
   background-color: rgba(242, 242, 242, 1);
   border: none;
-  border-radius: 4px;
+   /* -webkit-appearance: none; */
 }
 
 .group-children {
-  justify-content: end;
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-right: 36px;
 
 }
 
 .button-modal {
+  display: block;
   margin-top: 40px;
   height: 60px;
-  width: 577px;
+  min-width: 577px;
   border-radius: 10px;
 }
 
 .tooltip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   content: "";
-  font-size: 14px;
-  line-height: 13px;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 400;
-  text-align: center;
   background-color: rgba(131, 179, 211, 1);
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  bottom: 0;
   right: 0;
   cursor: pointer;
+
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.tooltip-icon {
+  position: absolute;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2px;
+  height: 12px;
+  left: 12px;
+  top: 7px;
+ }
+
+.tooltip-toggle:hover .tooltip-icon {
+  opacity: 0.8;
+}
+
+.tooltip-text {
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  content: "";
+  top: 100%;
+  right: 50%;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  transform: translateX(50%);
+  /* display: none; */
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.button-plus,
+.button-minus {
+  width: 40px;
+  height: 48px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.button-minus {
+  border-radius: 4px 0 0 4px;
 }
