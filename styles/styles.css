@@ -232,6 +232,7 @@ body {
 
 .main-hero {
   position: relative;
+  display: block;
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   width: 100%;
@@ -247,14 +248,16 @@ body {
 .main-hero::after {
   position: absolute;
   content: "";
-  width: 101%;
+  width: 100%;
   height: 57px;
-  left: -1.5px;
+  left: 0;
   bottom: 0;
   background-image: url("../images/index/background-border.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: 1;
+  padding: 0;
+  margin: 0;
 }
 
 .main-name-logo-sedona {
@@ -989,8 +992,8 @@ input[type="email"] {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
-  opacity: 1;
+.control-input:focus ~ .control-mark {
+  outline: 3px solid #83B3D3;
  }
 
 .control:active .control-mark {
@@ -1120,6 +1123,8 @@ input[type=number]::-webkit-outer-spin-button {
 .price-from-field:focus,
 .price-to-field:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .range-scale {
@@ -1135,9 +1140,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.range-bar:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
 
 .range-toggle {
   position: absolute;
@@ -1155,7 +1157,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .range-toggle:active,
 .range-toggle:focus {
-  outline: 3px solid rgba(255, 255, 255, 0.3);
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .toggle-min {
@@ -1242,6 +1244,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .button-reset:focus {
   color: rgba(255, 255, 255, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
 
 }
 
@@ -1368,7 +1371,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-position: center;
 }
 
-/* --------------------------------------Каталог и карточки на гридах-----------------------------------------------------------------------*/
+/* --------------------------------------Каталог и карточки на гридах----------------------------------------------------------------------- */
 .hotel-card-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
@@ -1426,6 +1429,40 @@ input[type=number]::-webkit-outer-spin-button {
   border: none;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.button-green-select {
+  padding: 8px 18px;
+  font-family: inherit;
+  text-align: center;
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: rgba(125, 181, 79, 1);
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-green-select:hover {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+.button-green-select:focus {
+  background-color: rgba(108, 158, 66, 1);
+}
+
+.button-green-select:active {
+  background-color:rgba(125, 181, 79, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green-select:disabled {
+  background-color: rgba(229, 229, 229, 1);
 }
 
 .hotel-card-item p {
@@ -1652,6 +1689,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 52px;
   border-radius: 50%;
   border: none;
+  content: "";
   background-color: rgba(242, 242, 242, 1);
   background-image: url("../images/modal/button-close.svg");
   background-repeat: no-repeat;
@@ -1851,8 +1889,8 @@ input[type=number]::-webkit-outer-spin-button {
   top: 7px;
 }
 
-.tooltip-toggle:hover .tooltip-icon {
-  opacity: 0.8;
+.tooltip:hover {
+  opacity: 0.5;
 }
 
 .tooltip-text {
@@ -1873,6 +1911,19 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 15px;
   transform: translateX(50%);
   /* display: none; */
+}
+
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #242424;
+  width: 19px;
+  height: 19px;
+  clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+
 }
 
 .tooltip-toggle:hover + .tooltip-text,

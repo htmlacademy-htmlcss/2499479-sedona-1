@@ -203,13 +203,14 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
             <form class="auth-form-date" action="https://echo.htmlacademy.ru/" method="post">
               <div class="field-group-date">
+                <!-- <div class="date-start"> -->
                 <label class="date">Дата Заезда:</label>
                 <input class="field-date" type="text" placeholder="27 апреля 2020">
                 <button class="date-button" type="button">
@@ -248,47 +249,49 @@
                   <label class="adults">Взрослые:</label>
                   <div class="wrapper">
                     <button class="button-minus">
-                      <span class="visually-hidden">Уменьшить</span>
-                    </button>
-                    <input class="field-age" type="number" id="auth-number" min="1" name="number" placeholder="2">
-                    <button class="button-plus">
-                      <span class="visually-hidden">Увеличить</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="field-group-age">
-                  <span class="children">
-                    <label class="group-children">Дети:</label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button">
-                        <svg class="tooltip-icon" width="2" height="12" viewbox="0 0 2 12" fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
-                        </svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст
-                        которых от 6 до
-                        18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </span>
-                  </span>
-                  <div class="wrapper-children">
-                    <button class="button-minus">
-                      <span class="visually-hidden">Уменьшить</span>
-                    </button>
-                    <input class="field-age" type="number" id="auth-number" name="number" placeholder="2">
-                    <button class="button-plus">
-                      <span class="visually-hidden">Увеличить</span>
-                    </button>
-                  </div>
-                </div>
 
-              </div>
-              <button class="button-modal button-blue" type="button" class="search-button">Найти</button>
-            </form>
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input class="field-age" type="number" id="auth-number" min="1" name="number" placeholder="2">
+              <button class="button-plus" type="button">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+          </div>
+          <div class="field-group-age">
+            <div class="children">
+              <label class="group-children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" width="2" height="12" viewbox="0 0 2 12" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст
+                  которых от 6 до
+                  18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
 
-          </section>
+            </div>
+            <div class="wrapper-children">
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input class="field-age" type="number" id="auth-number" name="number" placeholder="2">
+              <button class="button-plus" type="button">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+          </div>
+
         </div>
+        <button class="button-modal button-blue" type="button" class="search-button">Найти</button>
+        </form>
+
+        </section>
       </div>
+    </div>
     </div>
   </body>
 
