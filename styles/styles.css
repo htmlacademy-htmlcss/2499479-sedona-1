@@ -251,7 +251,7 @@ body {
   width: 100%;
   height: 57px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   background-image: url("../images/index/background-border.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1656,10 +1656,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-container {
+  display: grid;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  /* display: flex; */
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -1728,8 +1729,65 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0;
 }
 
-
 .field-group-date {
+  display: grid;
+  grid-template-columns: 137px 1fr 60px;
+  margin-bottom: 23px;
+}
+
+.date {
+  justify-self: flex-start;
+}
+
+.field-date {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 80px 12px 20px;
+}
+
+.field-date:active{
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #000000;
+}
+
+.date-button {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 11px 17px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.date-icon {
+  vertical-align: middle;
+}
+
+.date-text-red {
+ grid-column: 2/4;
+ grid-row: 2/2;
+ padding-left: 20px;
+  color: rgba(255, 87, 87, 1);
+}
+
+.date-text-black {
+  grid-column: 2/4;
+  grid-row: 2/2;
+  padding-left: 20px;
+  color: rgba(51, 51, 51, 1);;
+ }
+
+/* .field-group-date {
   position: relative;
   justify-content: space-between;
   display: flex;
@@ -1770,16 +1828,16 @@ input[type=number]::-webkit-outer-spin-button {
   bottom: -25px;
   left: 160px;
   color: rgba(255, 87, 87, 1);
-}
+} */
 
-.date-text-black {
+/* .date-text-black {
   margin: 0;
   position: absolute;
   content: "";
   bottom: -25px;
   left: 160px;
   color: rgba(51, 51, 51, 1);
-}
+} */
 
 .auth-form-age {
   display: flex;
@@ -1942,9 +2000,59 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-plus {
+  position: relative;
   border-radius: 0 4px 4px 0;
+}
+.button-plus::before,
+.button-plus::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87,0.3);
+  top: 50%;
+  left: 50%;
+}
+
+.button-plus::after {
+  transform: translate(-50%,-50%);
+}
+
+.button-plus::before {
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.button-plus:hover::before,
+.button-plus:hover::after {
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .button-minus {
+  position: relative;
   border-radius: 4px 0 0 4px;
+}
+
+.button-minus::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87,0.3);
+  top: 50%;
+  left: 50%;
+}
+
+.button-minus::after {
+  transform: translate(-50%,-50%);
+}
+
+
+.button-minus:hover::after {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.button-minus:focus::after {
+
+  border: 3px solid rgba(130, 179, 211, 1);
+  border-radius: 4px;
 }
