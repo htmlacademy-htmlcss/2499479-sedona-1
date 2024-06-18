@@ -1726,7 +1726,7 @@ h3 {
 .modal {
   position: relative;
   margin: auto;
-  padding: 0 70px;
+  padding: 64px 70px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
   border: none;
@@ -1780,7 +1780,6 @@ h3 {
 
 .modal-title {
   margin: 0;
-  margin-top: 64px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -1802,14 +1801,30 @@ h3 {
 .field-group-date {
   display: grid;
   grid-template-columns: 137px 1fr 60px;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
+  row-gap: 4px;
 }
 
 .date {
   justify-self: flex-start;
 }
 
-.field-date {
+.date-start {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  color: rgba(0, 0, 0, 1);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 80px 12px 20px;
+  box-sizing: border-box;
+}
+
+.date-end {
   grid-column: 2/4;
   grid-row: 1/2;
   color: rgba(0, 0, 0, 1);
@@ -1880,7 +1895,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  padding-top: 3px;
+
   color: rgba(255, 87, 87, 1);
 }
 
@@ -1899,6 +1914,7 @@ h3 {
 .auth-form-age {
   display: flex;
   margin: 0;
+  margin-bottom: 48px;
 
 }
 
@@ -1919,7 +1935,7 @@ h3 {
 
 }
 
-.wrapper {
+.wrapper-adults {
   display: flex;
   align-items: center;
   border-radius: 4px;
@@ -1975,7 +1991,10 @@ h3 {
 
 .button-modal {
   display: block;
-  margin-top: 40px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
   height: 60px;
   min-width: 577px;
   border-radius: 10px;
@@ -1988,7 +2007,7 @@ h3 {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  right: 0;
+  right: 1px;
   cursor: pointer;
 
 }
@@ -1999,6 +2018,7 @@ h3 {
   padding: 0;
   margin: 0;
   display: block;
+
 }
 
 .tooltip-icon {
@@ -2011,6 +2031,7 @@ h3 {
   height: 12px;
   left: 12px;
   top: 7px;
+
 }
 
 .tooltip:hover {
@@ -2024,15 +2045,15 @@ h3 {
   line-height: 20px;
   font-weight: normal;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
+  margin-top: 13px;
   border-radius: 10px;
   width: 256px;
+  height: 143px;
   position: absolute;
   content: "";
   top: 100%;
   right: 50%;
-  margin-bottom: 25px;
-  margin-top: 15px;
   transform: translateX(50%);
   /* display: none; */
 }
@@ -2040,13 +2061,13 @@ h3 {
 .tooltip-text::before {
   position: absolute;
   content: "";
-  top: -18px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #242424;
   width: 19px;
-  height: 19px;
-  clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+  height: 16px;
+  clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
 
 }
 
@@ -2060,7 +2081,7 @@ h3 {
   width: 20px;
   height: 20px;
   border: none;
-  margin: 19px 10px;
+  margin: 14px 10px;
   padding: 9px 3px;
   cursor: pointer;
 }
