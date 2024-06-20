@@ -141,7 +141,7 @@ body {
 .navigation-link-current::after {
   position: absolute;
   right: 16px;
-  bottom: 0;
+  bottom: -1px;
   left: 16px;
   height: 2px;
   background-color: rgba(117, 98, 87, 1);
@@ -298,8 +298,10 @@ body {
 
 .button-brown {
   display: block;
-  width: 160px;
-  height: 36px;
+  max-width: 160px;
+  min-height: 36px;
+  align-items: center;
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -307,21 +309,17 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
+  border: none;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .button-link-come-here {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: inline-block;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  display: block;
   align-items: center;
   max-width: 160px;
+  min-height: 36px;
   padding: 8px 34px 8px 34px;
   margin: 0;
   margin-top: 14px;
@@ -333,6 +331,7 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
+  border: none;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -422,6 +421,14 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
+
+}
+
+.advantages-photo-1,
+.advantages-photo-2 {
+  width: auto;
+  height: auto;
+  background-size: cover;
 }
 
 .advantages-container-blue {
@@ -751,8 +758,10 @@ body {
   color: #FFFFFF;
   text-align: center;
   background-image: url("../images/index/subscribe-background.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  background-size: cover;
 }
 
 .subscribes-container {
@@ -1439,6 +1448,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+
 }
 
 .button-submit {
@@ -1698,54 +1708,26 @@ h3 {
 }
 
 .button-hotel-card-link {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 140px;
-  height: 36px;
-  border: none;
-  text-transform: uppercase;
-  text-decoration: none;
+  max-width: 140px;
+  min-height: 36px;
+  padding: 8px 26px;
 }
 
 
 .hotel-card-button {
   padding: 8px 20px;
-  font-family: inherit;
+  align-items: center;
   text-align: center;
-  width: 140px;
-  height: 36px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  border-radius: 4px;
-  border: none;
-  text-transform: uppercase;
-  text-decoration: none;
+  max-width: 140px;
+  min-height: 36px;
 }
 
 .button-green-select {
   padding: 8px 18px;
-  font-family: inherit;
-  text-align: center;
-  width: 140px;
-  height: 36px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
   color: #FFFFFF;
   background-color: rgba(125, 181, 79, 1);
-  border-radius: 4px;
-  border: none;
-  text-transform: uppercase;
-  text-decoration: none;
+
 }
 
 .button-green-select:hover {
@@ -1809,12 +1791,13 @@ h3 {
 .hotel-card-rating {
   display: -ms-grid;
   display: grid;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  width: 140px;
-  height: 36px;
+  max-width: 140px;
+  min-height: 36px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1852,42 +1835,25 @@ h3 {
 }
 
 .pagination-link-hidden-pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
+
+  display: block;
+
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
   color: #000000;
   background-color: #FFFFFF;
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
   text-decoration: none;
   text-transform: none;
-  min-width: 60px;
+  border: none;
+  max-width: 60px;
   min-height: 60px;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px 22px;
   margin: 0;
 }
 
 .pagination-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: block;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1895,23 +1861,22 @@ h3 {
   background-color: rgba(130, 179, 211, 1);
   text-decoration: none;
   text-transform: none;
+  border: none;
   border-radius: 4px;
-  min-width: 60px;
+  max-width: 60px;
   min-height: 60px;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 25px;
   margin: 0;
 }
 
 .pagination-link:hover {
   background-color: rgba(104, 162, 202, 1);
-  border: 1px solid rgba(130, 179, 211, 1);
+  outline: 1px solid  rgba(130, 179, 211, 1);
 }
 
 .pagination-link:focus {
   background-color: rgba(104, 162, 202, 1);
-  border: 1px solid rgba(130, 179, 211, 1);
+  outline: 1px solid rgba(130, 179, 211, 1);
 }
 
 .pagination-link:active {
@@ -1920,15 +1885,7 @@ h3 {
 }
 
 .pagination-current {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: block;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1936,12 +1893,16 @@ h3 {
   background-color: rgba(242, 242, 242, 1);
   text-decoration: none;
   text-transform: none;
-  min-width: 60px;
+  border: none;
+  max-width: 60px;
   min-height: 60px;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 24px;
   margin: 0;
+}
+
+.last-page {
+  padding-left: 18.5px;
+  padding-right: 18.5px;
 }
 
 .pagination-current:hover {
@@ -2009,7 +1970,7 @@ h3 {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
