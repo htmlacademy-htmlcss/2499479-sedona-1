@@ -4,10 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-
-  </head>
+     </head>
 
   <body>
     <div class="container">
@@ -51,7 +50,7 @@
               </a>
             </li>
           </ul>
-          <a class="button-link button-brown" href="#">Хочу сюда!<span class="visually-hidden">Хочу сюда!</span></a>
+          <a class="button-link-come-here" href="#">Хочу сюда!<span class="visually-hidden">Хочу сюда!</span></a>
         </nav>
       </header>
       <main class="main-container main-index">
@@ -77,6 +76,7 @@
               <h3 class="advantages-subtitle">Небольшая площадь</h3>
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
             </li>
+
             <li class="advantages-item advantages-item-center">
               <h3 class="advantages-subtitle">Красивая дорога</h3>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -141,7 +141,7 @@
             <form class="subscribes-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label>
                 <span class="visually-hidden">email</span>
-                <input type="email" id="subscribes-email" name="subscribes-email" placeholder="Ваш e-mail"/>
+                <input type="email" id="subscribes-email" name="subscribes-email" placeholder="Ваш e-mail" />
               </label>
               <button class="subscribes-button" type="submit">Подписаться</button>
             </form>
@@ -209,9 +209,9 @@
           <h2 class="modal-title">Поиск Гостиницы в Седоне</h2>
           <form class="auth-form-date" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group-date">
-              <label class="date">Дата Заезда:</label>
-              <input class="field-date date-start" type="text" id="date-start" placeholder="Укажите дату"
-                value="27 апреля 2020">
+              <label class="date" for="date-start">Дата Заезда:</label>
+              <input class="field-date date-start" type="text" id="date-start" name="date-start"
+                placeholder="Укажите дату" value="27 апреля 2020">
               <button class="date-button" type="button">
                 <svg class="date-icon" width="20" height="20" viewbox="0 0 20 20" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
@@ -227,8 +227,8 @@
               <span class="date-text-red">Мы не можем отправить вас в прошлое</span>
             </div>
             <div class="field-group-date">
-              <label class="date">Дата Выезда:</label>
-              <input class="field-date date-end" type="text" id="date-end" placeholder="Укажите дату"
+              <label class="date" for="date-end">Дата Выезда:</label>
+              <input class="field-date date-end" type="text" id="date-end" name="date-end" placeholder="Укажите дату"
                 value="1 сентября 2023">
               <button class="date-button" type="button">
                 <svg class="date-icon" width="20" height="20" viewbox="0 0 20 20" fill="currentColor"
