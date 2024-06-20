@@ -539,7 +539,7 @@ img {
 
 .item-house {
   content: "";
-  background-image: url(../images/index/services/advantages-icon-house.svg);
+  background-image: url("../images/index/services/advantages-icon-house.svg");
   background-repeat: no-repeat;
   background-position: center 80px;
 
@@ -547,7 +547,7 @@ img {
 
 .item-food {
   content: "";
-  background-image: url(../images/index/services/advantages-icon-food.svg);
+  background-image: url("../images/index/services/advantages-icon-food.svg");
   background-repeat: no-repeat;
   background-position: center 81px;
 
@@ -555,7 +555,7 @@ img {
 
 .item-souvenirs {
   content: "";
-  background-image: url(../images/index/services/advantages-icon-souvenirs.svg);
+  background-image: url("../images/index/services/advantages-icon-souvenirs.svg");
   background-repeat: no-repeat;
   background-position: center 78px;
 
@@ -1448,19 +1448,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-control-view-table {
-  background-image: url(../images/catalog/control/control-icon-table.svg);
+  background-image: url("../images/catalog/control/control-icon-table.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-control-view-sketch {
-  background-image: url(../images/catalog/control/control-icon-sketch.svg);
+  background-image: url("../images/catalog/control/control-icon-sketch.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-control-view-list {
-  background-image: url(../images/catalog/control/control-icon-list.svg);
+  background-image: url("../images/catalog/control/control-icon-list.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
