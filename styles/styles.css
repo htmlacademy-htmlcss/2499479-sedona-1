@@ -113,7 +113,6 @@ img {
   text-decoration: none;
   margin: 0;
   padding: 20px 16px;
-
 }
 
 .navigation-link:hover {
@@ -130,6 +129,11 @@ img {
   opacity: 0.3;
 }
 
+.navigation-link-current,
+.button-link-current {
+  pointer-events: none;
+}
+
 .navigation-link-current::after {
   position: absolute;
   right: 16px;
@@ -138,13 +142,7 @@ img {
   height: 2px;
   background-color: #756257;
   content: "";
-
 }
-
-.disabled {
-  pointer-events: none;
-  cursor: default;
-  }
 
 .navigation-link-logo-sedona {
   display: flex;
@@ -685,6 +683,7 @@ img {
   text-align: center;
   background-image: url("../images/index/subscribe-background.jpg");
   background-repeat: no-repeat;
+  background-color: #000000;
   width: auto;
   height: auto;
   background-size: cover;
@@ -1664,7 +1663,7 @@ h3 {
   text-transform: none;
   border: none;
   border-radius: 4px;
-   min-height: 60px;
+  min-height: 60px;
   padding: 11px 24.5px;
   margin: 0;
 }
