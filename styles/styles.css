@@ -37,7 +37,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -250,7 +250,6 @@ img {
 .main-name-logo-sedona {
   display: block;
   margin: 0 auto;
-
 }
 
 .button-brown {
@@ -392,7 +391,8 @@ img {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0 27.5px 30px 24.5px;
+  padding: 0 28px 30px 25px;
+  min-width: 174px;
   font-size: 24px;
   line-height: 28px;
   color: #ffffff;
@@ -428,7 +428,7 @@ img {
   box-sizing: border-box;
   width: 400px;
   margin: 0;
-  padding: 112.5px 85px;
+  padding: 113px 85px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -465,7 +465,7 @@ img {
 
 .services {
   margin: 0;
-  margin-top: 64px;
+  margin-top: 63px;
 
 }
 
@@ -548,7 +548,6 @@ img {
 .services-description-slogan {
   margin: 0;
   padding-top: 20px;
-  padding-right: 1px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -711,6 +710,16 @@ img {
 .email:focus {
   outline: 2px solid #83B3D3;
   opacity: 1;
+}
+
+.email:active {
+  opacity: 0.5;
+}
+
+.email:disabled {
+  opacity: 1;
+  outline: none;
+  cursor: default;
 }
 
 .subscribes-button {
@@ -998,10 +1007,6 @@ img {
   font-weight: 700;
 }
 
-.filter-search-type-house-title {
-  padding-left: 1px;
-}
-
 .infrastructure-list {
   font-size: 18px;
   line-height: 23px;
@@ -1234,6 +1239,13 @@ img {
 
 .range-toggle:active {
   outline: 2px solid #83b3d3;
+}
+
+.range-toggle:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.2;
+  outline: none;
+  cursor: default;
 }
 
 .toggle-min {
@@ -1777,9 +1789,9 @@ img {
   z-index: 2;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1822,6 +1834,13 @@ img {
 .modal-close-button:active {
   opacity: 0.5;
   outline: none;
+}
+
+.modal-close-button:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.2;
+  outline: none;
+  cursor: default;
 }
 
 .date {
@@ -2125,7 +2144,7 @@ img {
   height: 143px;
   position: absolute;
   top: 27px;
-  right: 13px;
+  right: 14px;
   transform: translateX(50%);
   display: none;
 }
@@ -2217,4 +2236,45 @@ img {
 .button-plus:active::after,
 .button-minus:active::after {
   background-color: rgba(117, 97, 87, 0.3);
+}
+
+.button-plus:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.2;
+  outline: none;
+  cursor: default;
+}
+
+.button-plus:disabled::after,
+.button-plus:disabled::before {
+  background-color: #706b6b;
+  outline: none;
+  cursor: default;
+}
+
+.button-minus:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.2;
+  outline: none;
+  cursor: default;
+}
+
+.button-minus:disabled::after {
+  background-color: #706b6b;
+  outline: none;
+  cursor: default;
+}
+
+.field-age:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.2;
+  outline: none;
+  cursor: default;
+}
+
+.field-date:disabled {
+  background-color: #f2f2f2;
+  opacity: 0.2;
+  outline: none;
+  cursor: default;
 }
