@@ -383,7 +383,7 @@ img {
   margin: 0;
   width: 400px;
   padding: 102px 85px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-title {
@@ -708,7 +708,7 @@ img {
 }
 
 .email:focus {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
   opacity: 1;
 }
 
@@ -793,7 +793,7 @@ img {
   margin: 0;
   width: 47.33px;
   height: 40px;
-  color: #82B3D3;
+  color: #82b3d3;
 }
 
 .button-social:hover {
@@ -1045,7 +1045,7 @@ img {
 }
 
 .control-input:focus ~ .control-mark {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control:active,
@@ -1189,7 +1189,7 @@ img {
 
 .price-from-field:hover,
 .price-to-field:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .price-from-field:focus,
@@ -1266,7 +1266,7 @@ img {
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border-radius: 4px;
   border: none;
   padding: 8px;
@@ -1451,7 +1451,7 @@ img {
   display: block;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 12px 10px;
 }
